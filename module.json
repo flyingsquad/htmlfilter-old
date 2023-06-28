@@ -1,0 +1,19 @@
+{
+  "id": "htmlfilter",
+  "title": "HTML Character Sheet Filter",
+  "description": "Takes an HTML file and filters character sheet data through it into a browser tab.",
+  "authors": [
+    {
+		"name": "bkvam"
+    }
+  ],
+  "version": "1.0.2",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "10"
+  },
+  "esmodules": ["htmlfilter.js"],
+  "url": "https://github.com/bkvam/htmlfilter",
+  "manifest": "https://raw.githubusercontent.com/bkvam/htmlfilter/main/module.json",
+  "download": "https://github.com/bkvam/htmlfilter/archive/refs/tags/v1.0.2-beta.zip"
+}
