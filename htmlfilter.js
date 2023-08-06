@@ -872,6 +872,7 @@ export class HTMLFilter {
  * These hooks can't be set because some data (full names of languages, proficiencies) aren't
  * loaded until the character sheet is opened. To avoid replicating all that code here,
  * only allow characters to be filtered from the character sheet title bar.
+*/
 
 Hooks.on("getActorDirectoryEntryContext", (html, entries) => {
 	entries.push({
@@ -952,7 +953,6 @@ Hooks.on("renderActorDirectory", (app, html, data) => {
 
     });
 });
-*/
 
 /*
  * Create the configuration settings.

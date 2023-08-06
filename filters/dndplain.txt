@@ -4,314 +4,15 @@
 <title>@{title}</title>
 <STYLE type="text/css" media="screen,print">
 	
-	blockquote, .secret {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-left: .25in;
-		text-indent: 0in;
-		background-color: lightgrey;
-		border: 1px solid gray;
-		padding: 2px;
-	}
-
-	p.normal {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-	}
-
-	h1, p.h1 {
-		margin-top: .25in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 16pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	h1.title {
-		margin-top: 0in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 16pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		text-align: left;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	h2, p.h2 {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 14pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	h3, p.h3 {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 12pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	p.spellhdr {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 12pt;
-		font-weight: bold;
-		font-variant: small-caps;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	h4, p.h4 {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 12pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	h5, p.h5 {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 12pt;
-		font-weight: italic;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-		page-break-after: avoid;
-		break-after: avoid;
-	}
-
-	p.char {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-size: 14pt;
-		font-weight: bold;
-		color: darkred;
-		text-indent: 0in;
-		margin-left: 0in;
-	}
-
-	hr { 
-	  display: block;
-	  margin-top: 0.5em;
-	  margin-bottom: 0.5em;
-	  margin-left: 0;
-	  margin-right: auto;
-	  border-style: inset;
-	  border-width: 0;
-	  height: 3px;
-	  color: darkred;
-	  background-color: darkred;
-	  width: 300px;
-	  text-align: left;
-	}
-
-	p.sb {
-		margin-top: .10in;
-		margin-bottom: 0in;
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		text-indent: 0in;
-		margin-left: 0in;
-	}
-
-	p.exdent {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: -.25in;
-		margin-left: .25in;
-	}
-
-	p.img {
-		margin: 0.1in;
-		text-align: center;
-	}
-
-	p.spell {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: -.25in;
-		margin-left: .25in;
-	}
-
-	p.spellfirst {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0.05in;
-		margin-bottom: 0in;
-		text-indent: -.25in;
-		margin-left: .25in;
-	}
-
-
-	p.italic {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-style: italic;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: -.25in;
-		margin-left: .25in;
-	}
-
-	p, p.indent {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: .25in;
-	}
-
-	p.detail {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		margin-left: .5in;
-		text-indent: -.25in;
-	}
-	
-	td.abil {
-		font-weight: bold;
-		text-align: center;
-	}
-
-	p.desc {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		margin-left: .5in;
-	}
-
-	div.character {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: .25in;
-	}
-	
-	div.twocol {
-		column-count: 2;
-		column-gap: 0.25in;
-		margin-top: 0.25in;
-	}
-
-	p.subpar {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: -.25in;
-		margin-left: .5in;
-	}
-
-	span.prep {
-		color: darkred;
-	}
-
-	td {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		text-align: center;
-		font-size: 10pt;
-		margin-top: 0in;
-		margin-bottom: 0in;
-		text-indent: 0in;
-	}
-	
-	ul {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		display: block;
-		list-style-type: disc;
-		text-indent: 0;
-		margin: 0;
-		#padding-left: 1em;
-	}
-	
-	li {
-		margin: 0;
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		text-indent: 0;
-		padding-left: 0;
-	}
-	
-	.entry-title-inner {
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-		font-style: italic;
-	}
-
-	.tapered-rule {
-		margin-top: .1in;
-		margin-bottom: .1in;
-		display: block;
-		width: 100%;
-		height: 5px;
-		border: none;
-		color: #922610;
-		fill: #922610;
-	}
-	
-	.text-center {
-		text-align: center;
-		font-family: "Trebuchet MS", "Arial", "Helvetica", sans-serif;
-		font-size: 10pt;
-	}
-	
-	.top-margin {
-		margin-top: 0.05in;
-	}
 	
 </STYLE>
 
 </head>
 
 <body>
-<div class="twocol">
-<h1 class="title">@{name}</h1>
+<h1>@{name}</h1>
 @@if{img}
-<p class="img"><img src="@{img}" alt="@{name}" width="200"></p>
+<p><img src="@{img}" alt="@{name}" width="200"></p>
 @@endif
 @@if{actorType='character'}
 	<p class="exdent">@{classList} (@{xp}/@{nextLevelXP})</p>
@@ -322,15 +23,15 @@
 <p class="exdent"><b>Speed</b> @{speed}</p>
 <p class="exdent"><b>Proficiency Bonus</b> @{prof}</p>
 
-<svg height="5" width="100%" class="tapered-rule" style="page-break-after: avoid; break-after: avoid;">
+<svg height="5" width="100%" class="tapered-rule">
   <polyline points="0,0 300,2.5 0,5" stroke="darkred"></polyline>
 </svg>
 
-<table border="0" cellpadding="2" cellspacing="0" width="300" style="page-break-after: avoid; break-after: avoid;">
+<table border="0" cellpadding="2" cellspacing="0" width="300">
   <tr>
     <td class="abil">STR</td>
-    <td class="abil">DEX</td>
     <td class="abil">CON</td>
+    <td class="abil">DEX</td>
     <td class="abil">INT</td>
     <td class="abil">WIS</td>
     <td class="abil">CHA</td>
@@ -581,7 +282,7 @@ Int @{sign(intSave)}, Wis @{sign(wisSave)}, Cha @{sign(chaSave)}</p>
 		<p class="desc">@{itemdetails}</p>
 	@@endforeach
 @@endif
-</div>
+
 </body>
 
 </html>

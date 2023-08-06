@@ -116,9 +116,9 @@ export function stripjunk(filter, str) {
 		
 		if (match.groups.tag == "UUID" || match.groups.tag == "Compendium") {
 			if (match.groups.name)
-				s += `<b>${match.groups.name}</b>`;
+				s += `<b><u>${match.groups.name}</u></b>`;
 			else
-				s += '<b>' + resolveUUID(a, match.groups.item) + '</b>';
+				s += '<b><u>' + resolveUUID(a, match.groups.item) + '</u></b>';
 		} else {
 			// Something like @spell[greater restoration].
 			if (match.groups.tag == 'spell')

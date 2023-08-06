@@ -572,7 +572,7 @@ export class DnD5eObject extends SystemObject {
 			if (activation.type == 'reaction')
 				deets = cat(deets, ', ', activation.type);
 			else if (activation.type != 'action' &&  activation.type != 'special')
-				deets = cat(deets, ', ', `${activation.cost != 1 ? activation.cost + ' ' : ''}${activation.type} action${activation.cost != 1 ? 's' : ''}`);
+				deets = cat(deets, ', ', `${activation.cost != 1 && activation.cost != null ? activation.cost + ' ' : ''}${activation.type} action${activation.cost != 1 && activation.cost != null ? 's' : ''}`);
 		}
 		
 		if (i.system.uses != undefined && i.system.uses.value != null) {
@@ -653,15 +653,21 @@ export class DnD5eObject extends SystemObject {
 				mod = Math.max(a.system.abilities.str.mod, a.system.abilities.dex.mod);
 			else
 				mod = a.system.abilities.str.mod;
-			if (w.system.properties.thr)
-				range = `reach 5 ft or range ${w.system.range.value}/${w.system.range.long} ${w.system.range.units}`;
-			else if (w.system.range.value != null && w.system.range.units != null )
+			if (w.system.properties.thr) {
+				if (w.system.range.long)
+					range = `reach 5 ft or range ${w.system.range.value}/${w.system.range.long} ${w.system.range.units}`;
+				else
+					range = `reach 5 ft or range ${w.system.range.value} ${w.system.range.units}`;
+			} else if (w.system.range.value != null && w.system.range.units != null )
 				range = `reach ${w.system.range.value} ${w.system.range.units}`;
 			break;
 		case 'rwak':
 			weapdeets = cat(weapdeets, ', ', 'Ranged: ');
 			mod = a.system.abilities.dex.mod;
-			range = `range ${w.system.range.value}/${w.system.range.long} ${w.system.range.units}`;
+			if (w.system.range.long)
+				range = `range ${w.system.range.value}/${w.system.range.long} ${w.system.range.units}`;
+			else
+				range = `range ${w.system.range.value} ${w.system.range.units}`;
 			break;
 		}
 		
